@@ -48,6 +48,13 @@ nav {
 
 }
 
+/** Première règle de media **/
+@media screen and (max-width: 576px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
 header nav ul li a {
     width: 10em;
     margin-right: 0.5em;
@@ -86,19 +93,6 @@ nav ul li a.btn:hover { /** Etat final c'est ici **/
     transform: rotate(360deg);
 }
 
-.sous {
-    transform: rotate(0deg);
-    text-decoration: none;
-    color: inherit;
-    text-align: center;
-    display: inline-block;
-
-}
-nav ul li:hover .sous{
-    color: var(--dark);
-    background-color: var(--light);
-    transform: rotate(360deg);
-}
 
 abbr {
     text-decoration: none;
