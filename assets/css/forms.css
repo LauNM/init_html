@@ -1,0 +1,35 @@
+/**
+Form and field design
+**/
+
+.required::after { /**Pseudo-element ==> ::pseudo ==> permet de rajouter artificiellement un élément au html**/ 
+    content: "(*)";
+    color: red;
+}
+
+/**Input design**/
+input {
+  border-radius: 0.3em;
+  padding: .5em;
+  border: solid 1px rgb(128, 128, 128);
+
+}
+
+textarea {
+    border-radius: 0.3em;
+    padding: .5em;
+    border: solid 1px rgb(128, 128, 128);
+  
+  }
+
+.button {
+    border-radius: 0.3em;
+    padding: .5em;
+    background-color: var(--success);
+    color: white;
+    border: none;
+}
+
+.button:hover {
+    background-color: rgb(0, 100, 0);
+}
