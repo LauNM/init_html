@@ -25,9 +25,9 @@
     <body>
         <header class="row">
             
-            <h1 class=" col-xl-6 col-12">Découvrir le HTML</h1>
+            <h1 class=" col-xl-4 col-8">Découvrir le HTML</h1>
 
-            <p class=" col-xl-6 col-12">
+            <p class=" col-xl-4 col-8">
                 L'histoire du 
                 <!--
                     abbr avec l'attribut title pour donner la signification
@@ -37,7 +37,7 @@
                 à travers les âges
             </p>
             
-            <nav id="main nav" class="bg-dark col-xl-12"  ><!-- Element qui regroupe des balises de navigation -->
+            <nav id="main nav" class="bg-dark col-xl-12 col-12"  ><!-- Element qui regroupe des balises de navigation -->
               
                 <!--Burger menu button:
                     displayed only when device width < 578px
@@ -171,6 +171,30 @@
                 </address>
             </footer>
         </div>
+
+        <!-- Template pour l'affichage du formulaire de contact-->
+
+        <!--<template id="form-template">-->
+            <!--form c'est un ensemble de champs (ou contrôles de formulaires)-->
+           <h2>Contactez le service client</h2>
+            <form>
+                <div>
+                    <input type="text" name="name-ctrl" id="name-ctrl" placeholder="Votre nom...">
+                </div>
+                <div>
+                    <input type="email" name="email-ctrl" id="email-ctrl" placeholder="Votre email (*)..." required>
+                </div>
+                <div>
+                    <label>Objet de votre demande:</label>
+                    <textarea name="objet-ctrl" id="objet-ctrl"></textarea>
+                </div>
+                <div>
+                    <button id="send-btn">Envoyer</button>
+                </div>
+            </form>
+        <!--</template>-->
+
+        <!-- Fin du template pour l'affichage du formulaire de contact-->
     </body>
 
 </html><!-- Fin du document HTML -->
